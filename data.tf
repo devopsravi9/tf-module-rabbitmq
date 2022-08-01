@@ -6,7 +6,7 @@ data "aws_secretsmanager_secret_version" "secret" {
   secret_id = data.aws_secretsmanager_secret.secret.id
 }
 
-data "aws_ami" "ami" {
+data "aws_ami" "main" {
   executable_users = ["self"]
   most_recent      = true
   name_regex       = "base-with-ansible"
