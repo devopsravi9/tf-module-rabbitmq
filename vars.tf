@@ -5,3 +5,4 @@ variable "PROJECT" {}
 variable "ENV" {}
 variable "VPC_ID" {}
 variable "INSTANCE_TYPE" {}
+variable "WORKSTATION_IP" {}
