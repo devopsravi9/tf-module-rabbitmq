@@ -16,7 +16,7 @@ resource "aws_security_group" "main" {
     from_port        = 22
     to_port          = 22
     protocol         = "TCP"
-    cidr_blocks      = var.WORKSTATION_IP
+    cidr_blocks      = [var.WORKSTATION_IP]
   }
 
   egress {
